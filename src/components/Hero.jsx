@@ -1,5 +1,5 @@
 import profile from '../assets/profile.png'
-
+import { motion } from 'framer-motion'
 import {
     FaMapMarkerAlt,
     FaPhoneAlt,
@@ -14,12 +14,16 @@ const Hero = () => {
             id="home"
             className="pt-10 pb-20 px-4"
         >
-            <div className="max-w-7xl mx-auto bg-white rounded-[30px] shadow-sm border border-gray-100 overflow-hidden">
+            <div className="max-w-7xl mx-auto bg-white rounded-[30px] shadow-sm border border-gray-100">
 
                 <div className="grid lg:grid-cols-2 gap-16 items-start px-8 lg:px-14 py-14">
 
                     {/* LEFT CONTENT */}
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -60 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                    >
 
                         {/* Small Heading */}
                         <p className="text-purple-600 font-bold uppercase tracking-widest text-sm mb-6">
@@ -50,41 +54,46 @@ const Hero = () => {
                         {/* Buttons */}
                         <div className="flex flex-wrap gap-5 mb-12">
 
-                            <button className="bg-purple-600 hover:bg-purple-700 transition text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 shadow-lg shadow-purple-200">
+                            <button className="bg-purple-600 hover:bg-purple-700 hover:scale-105 transition duration-300 text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 shadow-lg shadow-purple-200">
                                 View My Work
                                 <FaArrowRight />
                             </button>
 
-                            <button className="border border-gray-200 hover:border-purple-300 transition bg-white px-8 py-4 rounded-2xl font-semibold text-gray-700 shadow-sm">
+                            <button className="border border-gray-200 hover:border-purple-300 hover:scale-105 transition duration-300 bg-white px-8 py-4 rounded-2xl font-semibold text-gray-700 shadow-sm">
                                 Download Resume
                             </button>
 
                         </div>
 
                         {/* Contact Info */}
-                        <div className="flex flex-col xl:flex-row gap-6 text-gray-500 text-sm">
+                        <div className="flex flex-wrap lg:flex-nowrap items-center gap-8 text-gray-500 text-sm w-full">
 
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 min-w-max">
                                 <FaMapMarkerAlt className="text-purple-600" />
                                 <span>Kalyan, Maharashtra, India</span>
                             </div>
 
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 min-w-max">
                                 <FaPhoneAlt className="text-purple-600" />
                                 <span>+91 9769905263</span>
                             </div>
 
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 min-w-max">
                                 <MdEmail className="text-purple-600 text-lg" />
                                 <span>prabhupuja12@gmail.com</span>
                             </div>
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
                     {/* RIGHT IMAGE SECTION */}
-                    <div className="flex justify-center lg:justify-end pt-6">
+                    <motion.div
+                        className="flex justify-center lg:justify-end pt-6"
+                        initial={{ opacity: 0, x: 60 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                    >
 
                         <div className="flex flex-col items-center relative pt-10">
 
@@ -99,7 +108,15 @@ const Hero = () => {
                             </div>
 
                             {/* IMAGE WRAPPER */}
-                            <div className="relative">
+                            <motion.div
+                                className="relative"
+                                animate={{ y: [0, -10, 0] }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: 'easeInOut',
+                                }}
+                            >
 
                                 {/* Outer Circle */}
                                 <div className="w-[360px] h-[360px] rounded-full bg-[#F3F0FF] flex items-center justify-center">
@@ -117,13 +134,16 @@ const Hero = () => {
 
                                 </div>
 
-                                {/* Online Indicator */}
-                                <div className="absolute bottom-10 right-10 w-7 h-7 bg-green-500 border-[5px] border-white rounded-full shadow-lg"></div>
 
-                            </div>
+                            </motion.div>
 
                             {/* EXPERIENCE CARD */}
-                            <div className="bg-white rounded-3xl shadow-xl border border-gray-100 px-8 py-5 mt-8 min-w-[240px]">
+                            <motion.div
+                                className="bg-white rounded-3xl shadow-xl border border-gray-100 px-8 py-5 mt-8 min-w-[240px]"
+                                initial={{ opacity: 0, y: 40 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, delay: 0.5 }}
+                            >
 
                                 <div className="flex items-center gap-4">
 
@@ -147,11 +167,11 @@ const Hero = () => {
 
                                 </div>
 
-                            </div>
+                            </motion.div>
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

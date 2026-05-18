@@ -1,31 +1,88 @@
+import { motion } from 'framer-motion'
+
 const Navbar = () => {
     return (
-        <header className="bg-white shadow-sm sticky top-0 z-50">
+        <motion.header
+            initial={{ y: -80, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-100"
+        >
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">
+
+                {/* Logo */}
+                <div className="flex items-center gap-3 cursor-pointer">
+
+                    <div className="w-11 h-11 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center font-bold shadow-lg">
                         PP
                     </div>
 
-                    <h1 className="font-bold text-lg">
-                        Puja P. Patkar
-                    </h1>
+                    <div>
+                        <h1 className="font-bold text-lg text-gray-900">
+                            Puja P. Patkar
+                        </h1>
+
+                        <p className="text-xs text-gray-500">
+                            Full-Stack Engineer
+                        </p>
+                    </div>
+
                 </div>
 
-                <nav className="hidden md:flex gap-8 font-medium">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#contact">Contact</a>
+                {/* Navigation */}
+                <nav className="hidden lg:flex items-center gap-10 font-medium text-gray-700">
+
+                    <a
+                        href="#home"
+                        className="hover:text-purple-600 transition duration-300"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="#about"
+                        className="hover:text-purple-600 transition duration-300"
+                    >
+                        About
+                    </a>
+
+                    <a
+                        href="#skills"
+                        className="hover:text-purple-600 transition duration-300"
+                    >
+                        Skills
+                    </a>
+
+                    <a
+                        href="#projects"
+                        className="hover:text-purple-600 transition duration-300"
+                    >
+                        Projects
+                    </a>
+
+                    <a
+                        href="#experience"
+                        className="hover:text-purple-600 transition duration-300"
+                    >
+                        Experience
+                    </a>
+
+                    <a
+                        href="#contact"
+                        className="hover:text-purple-600 transition duration-300"
+                    >
+                        Contact
+                    </a>
+
                 </nav>
 
-                <button className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-lg">
+                {/* Button */}
+                <button className="hidden md:block bg-purple-600 hover:bg-purple-700 hover:scale-105 transition duration-300 text-white px-6 py-3 rounded-xl shadow-lg shadow-purple-200 font-medium">
                     Contact Me
                 </button>
+
             </div>
-        </header>
+        </motion.header>
     )
 }
 
