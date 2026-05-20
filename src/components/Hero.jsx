@@ -1,180 +1,226 @@
 import profile from '../assets/profile.png'
+
 import { motion } from 'framer-motion'
+
 import {
-    FaMapMarkerAlt,
-    FaPhoneAlt,
     FaArrowRight,
+    FaGithub,
+    FaLinkedin,
 } from 'react-icons/fa'
 
-import { MdEmail } from 'react-icons/md'
+import {
+    MdEmail,
+} from 'react-icons/md'
 
 const Hero = () => {
     return (
         <section
             id="home"
-            className="pt-10 pb-20 px-4"
+            className="relative overflow-hidden pt-10 pb-14 px-4"
         >
-            <div className="max-w-7xl mx-auto bg-white rounded-[30px] shadow-sm border border-gray-100">
 
-                <div className="grid lg:grid-cols-2 gap-16 items-start px-8 lg:px-14 py-14">
+            {/* Background Blur */}
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-200/40 blur-3xl rounded-full"></div>
+
+            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-200/40 blur-3xl rounded-full"></div>
+
+            {/* Main Container */}
+            <div className="relative max-w-7xl mx-auto">
+
+                <div className="grid lg:grid-cols-[70%_30%] gap-10 items-center">
 
                     {/* LEFT CONTENT */}
                     <motion.div
-                        initial={{ opacity: 0, x: -60 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
+                        className="max-w-4xl"
                     >
 
-                        {/* Small Heading */}
-                        <p className="text-purple-600 font-bold uppercase tracking-widest text-sm mb-6">
-                            Senior Backend / Full-Stack Engineer
-                        </p>
+                        {/* Badge */}
 
-                        {/* Main Heading */}
-                        <h1 className="text-[42px] lg:text-[64px] leading-[1.1] font-bold text-[#0F172A] mb-8">
-                            Building Scalable
+
+                        {/* Heading */}
+                        <h1 className="text-[44px] md:text-[60px] lg:text-[74px] leading-[0.95] font-black tracking-[-3px] text-[#0F172A]">
+
+                            Building
+
                             <br />
-                            Systems. Solving
-                            <br />
-                            Real Business
-                            <span className="text-purple-600">
-                                {' '}Problems.
+
+                            <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                                Scalable
                             </span>
+
+                            <br />
+
+                            Digital Products.
+
                         </h1>
 
                         {/* Description */}
-                        <p className="text-gray-500 text-lg leading-9 max-w-xl mb-10">
-                            11+ years of experience building robust backend systems
-                            and full-stack applications using Laravel, Vue.js and
-                            modern technologies. Specialized in eCommerce,
-                            subscription systems, payment integrations and business
-                            automation.
+                        <p className="text-gray-600 text-lg md:text-xl leading-9 mt-10 max-w-3xl">
+
+                            Senior Backend & Full-Stack Engineer with 11+ years of
+                            experience building enterprise systems, eCommerce
+                            platforms, subscription engines and AI-powered web
+                            applications using Laravel, React, Vue.js and cloud
+                            technologies.
+
                         </p>
 
-                        {/* Buttons */}
-                        <div className="flex flex-wrap gap-5 mb-12">
+                        {/* CTA BUTTONS */}
+                        <div className="flex flex-wrap gap-5 mt-12">
 
-                            <button className="bg-purple-600 hover:bg-purple-700 hover:scale-105 transition duration-300 text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 shadow-lg shadow-purple-200">
-                                View My Work
-                                <FaArrowRight />
+                            <button className="group bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-2xl hover:shadow-purple-300 transition-all duration-300 text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3">
+
+                                View Projects
+
+                                <FaArrowRight className="group-hover:translate-x-1 transition duration-300" />
+
                             </button>
 
-                            <button className="border border-gray-200 hover:border-purple-300 hover:scale-105 transition duration-300 bg-white px-8 py-4 rounded-2xl font-semibold text-gray-700 shadow-sm">
+                            <button className="bg-white border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 px-8 py-4 rounded-2xl font-semibold text-gray-700">
+
                                 Download Resume
+
                             </button>
 
                         </div>
 
-                        {/* Contact Info */}
-                        <div className="flex flex-wrap lg:flex-nowrap items-center gap-8 text-gray-500 text-sm w-full">
+                        {/* SOCIAL LINKS */}
+                        <div className="flex flex-wrap items-center gap-8 mt-10">
 
-                            <div className="flex items-center gap-3 min-w-max">
-                                <FaMapMarkerAlt className="text-purple-600" />
-                                <span>Kalyan, Maharashtra, India</span>
-                            </div>
+                            <a
+                                href="mailto:prabhupuja12@gmail.com"
+                                className="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition"
+                            >
+                                <MdEmail className="text-xl" />
 
-                            <div className="flex items-center gap-3 min-w-max">
-                                <FaPhoneAlt className="text-purple-600" />
-                                <span>+91 9769905263</span>
-                            </div>
+                                <span className="font-medium">
+                                    Email Me
+                                </span>
+                            </a>
 
-                            <div className="flex items-center gap-3 min-w-max">
-                                <MdEmail className="text-purple-600 text-lg" />
-                                <span>prabhupuja12@gmail.com</span>
-                            </div>
+                            <a
+                                href="#"
+                                className="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition"
+                            >
+                                <FaGithub className="text-xl" />
+
+                                <span className="font-medium">
+                                    GitHub
+                                </span>
+                            </a>
+
+                            <a
+                                href="#"
+                                className="flex items-center gap-3 text-gray-600 hover:text-purple-600 transition"
+                            >
+                                <FaLinkedin className="text-xl" />
+
+                                <span className="font-medium">
+                                    LinkedIn
+                                </span>
+                            </a>
 
                         </div>
 
                     </motion.div>
 
-                    {/* RIGHT IMAGE SECTION */}
+                    {/* RIGHT CONTENT */}
                     <motion.div
-                        className="flex justify-center lg:justify-end pt-6"
-                        initial={{ opacity: 0, x: 60 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
+                        className="relative flex justify-center lg:justify-end -mt-16"
                     >
 
-                        <div className="flex flex-col items-center relative pt-10">
+                        {/* Decorative Ring */}
+                        <div className="absolute inset-0 flex items-center justify-center">
 
-                            {/* Decorative Dots */}
-                            <div className="absolute top-0 right-0 grid grid-cols-4 gap-3 opacity-40">
-                                {[...Array(16)].map((_, index) => (
-                                    <div
-                                        key={index}
-                                        className="w-3 h-3 rounded-full bg-purple-400"
-                                    ></div>
-                                ))}
-                            </div>
-
-                            {/* IMAGE WRAPPER */}
-                            <motion.div
-                                className="relative"
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{
-                                    duration: 4,
-                                    repeat: Infinity,
-                                    ease: 'easeInOut',
-                                }}
-                            >
-
-                                {/* Outer Circle */}
-                                <div className="w-[360px] h-[360px] rounded-full bg-[#F3F0FF] flex items-center justify-center">
-
-                                    {/* Inner Circle */}
-                                    <div className="w-[280px] h-[280px] rounded-full overflow-hidden border-[12px] border-white shadow-xl">
-
-                                        <img
-                                            src={profile}
-                                            alt="profile"
-                                            className="w-full h-full object-cover"
-                                        />
-
-                                    </div>
-
-                                </div>
-
-
-                            </motion.div>
-
-                            {/* EXPERIENCE CARD */}
-                            <motion.div
-                                className="bg-white rounded-3xl shadow-xl border border-gray-100 px-8 py-5 mt-8 min-w-[240px]"
-                                initial={{ opacity: 0, y: 40 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, delay: 0.5 }}
-                            >
-
-                                <div className="flex items-center gap-4">
-
-                                    {/* Icon */}
-                                    <div className="w-12 h-12 rounded-2xl bg-purple-100 flex items-center justify-center">
-                                        <span className="text-2xl">
-                                            🏅
-                                        </span>
-                                    </div>
-
-                                    {/* Text */}
-                                    <div>
-                                        <h3 className="text-4xl font-bold text-purple-600 leading-none">
-                                            11+
-                                        </h3>
-
-                                        <p className="text-gray-500 mt-2">
-                                            Years of Experience
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                            </motion.div>
+                            <div className="w-[280px] h-[280px] rounded-full border border-purple-100"></div>
 
                         </div>
+
+                        {/* Floating Experience Card */}
+                        <motion.div
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{
+                                duration: 4,
+                                repeat: Infinity,
+                                ease: 'easeInOut',
+                            }}
+                            className="absolute top-2 -left-5 bg-white shadow-lg rounded-2xl px-4 py-3 border border-gray-100 z-20"
+                        >
+
+                            <p className="text-gray-500 text-xs mb-1">
+                                Experience
+                            </p>
+
+                            <h3 className="text-xl font-bold text-purple-600">
+                                11+
+                            </h3>
+
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.4 }}
+                            className="absolute -top-8 right-6 bg-white/90 backdrop-blur-md border border-purple-100 shadow-xl rounded-full px-5 py-3 z-30"
+                        >
+
+                            <div className="flex items-center gap-3">
+
+                                <div className="relative">
+                                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+
+                                    <div className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-75"></div>
+                                </div>
+
+                                <span className="text-sm font-semibold text-gray-700 whitespace-nowrap">
+                                    Available for opportunities
+                                </span>
+
+                            </div>
+
+                        </motion.div>
+
+                        {/* Profile Image */}
+                        <motion.div
+                            animate={{ y: [0, -10, 0] }}
+                            transition={{
+                                duration: 6,
+                                repeat: Infinity,
+                                ease: 'easeInOut',
+                            }}
+                            className="relative z-10"
+                        >
+
+                            {/* Gradient Circle */}
+                            <div className="w-[260px] h-[260px] md:w-[320px] md:h-[320px] rounded-full bg-gradient-to-br from-purple-100 via-indigo-50 to-purple-200 flex items-center justify-center shadow-xl">
+
+                                {/* Image Circle */}
+                                <div className="w-[210px] h-[210px] md:w-[260px] md:h-[260px] rounded-full overflow-hidden border-[8px] border-white shadow-lg">
+
+                                    <img
+                                        src={profile}
+                                        alt="profile"
+                                        className="w-full h-full object-cover"
+                                    />
+
+                                </div>
+
+                            </div>
+
+                        </motion.div>
 
                     </motion.div>
 
                 </div>
+
             </div>
+
         </section>
     )
 }

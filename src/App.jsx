@@ -25,11 +25,11 @@ function App() {
         {/* Skills / Tech Stack */}
         <Skills />
 
-        {/* Featured Projects */}
-        <Projects />
-
         {/* Professional Experience */}
         <Experience />
+
+        {/* Featured Projects */}
+        <Projects />
 
       </main>
 
