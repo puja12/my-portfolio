@@ -127,17 +127,6 @@ const Experience = () => {
 
                                         </p>
 
-                                        {/* FOOTER */}
-                                        <div className="flex items-center gap-2 mt-7 text-purple-600 font-semibold text-sm">
-
-                                            <span>
-                                                Enterprise Development
-                                            </span>
-
-                                            <FaArrowRight className="text-xs" />
-
-                                        </div>
-
                                     </div>
 
                                 </div>

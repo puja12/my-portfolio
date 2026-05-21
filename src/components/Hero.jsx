@@ -1,6 +1,7 @@
 import profile from '../assets/profile.png'
 import heroBg from '../assets/hero-bg.jpg'
 import { motion } from 'framer-motion'
+import resume from '../assets/Puja-Patkar-Full-Stack-Engineer.pdf'
 
 import {
     FaArrowRight,
@@ -168,11 +169,13 @@ const Hero = () => {
 
                             </button>
 
-                            <button className="bg-white border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 px-8 py-4 rounded-2xl font-semibold text-gray-700">
-
+                            <a
+                                href={resume}
+                                download="Puja-Patkar-Full-Stack-Engineer.pdf"
+                                className="bg-white border border-gray-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 px-8 py-4 rounded-2xl font-semibold text-gray-700 inline-flex items-center"
+                            >
                                 Download Resume
-
-                            </button>
+                            </a>
 
                         </div>
 
