@@ -67,27 +67,97 @@ export const skills = [
 
 export const projects = [
     {
-        title: 'Multi Brand eCommerce Platform',
+        title: 'Multi-Brand eCommerce Platform',
+
         description:
-            'Enterprise eCommerce application for AU & NZ markets with Laravel, Vue.js and Inertia.',
-        tech: ['Laravel', 'Vue.js', 'MySQL'],
+            'Collaborated on scalable multi-brand eCommerce platforms for Brooks Running, RH Sports & JanSport Australia using Laravel and Vue.js.',
+
+        tech: [
+            'Laravel',
+            'Vue.js',
+            'MySQL',
+            'Redis',
+            'GCP',
+        ],
+
         image: '/projects/project1.jpg',
     },
 
     {
-        title: 'Healthcare Management System',
+        title: 'FIFA India Subscription Platform',
+
         description:
-            'Patient management and OPD system with scalable backend architecture.',
-        tech: ['Laravel', 'React', 'Redis'],
+            'Worked as part of the development team to implement subscription workflows, Razorpay auto-debit and member management features.',
+
+        tech: [
+            'Laravel',
+            'Vue.js',
+            'MySQL',
+            'Razorpay',
+        ],
+
         image: '/projects/project2.jpg',
     },
 
     {
-        title: 'AI Powered Support Chatbot',
+        title: 'Hospital Admin System (SMHH)',
+
         description:
-            'Customer support chatbot with AI integration and real-time communication.',
-        tech: ['Laravel', 'OpenAI', 'Vue.js'],
+            'Contributed to OPD/IPD management modules including billing, admission workflows and medical reporting systems.',
+
+        tech: [
+            'Laravel',
+            'Vue.js',
+            'MySQL',
+        ],
+
         image: '/projects/project3.jpg',
+    },
+
+    {
+        title: 'Price Revision & Automation',
+
+        description:
+            'Helped develop pricing automation tools with bulk updates, scheduled revisions and cron-based processing.',
+
+        tech: [
+            'Laravel',
+            'MySQL',
+        ],
+
+        image: '/projects/project4.jpg',
+    },
+
+    {
+        title: 'AI Powered Support Chatbot',
+
+        description:
+            'Integrated AI-powered support workflows and real-time chatbot communication within customer support systems.',
+
+        tech: [
+            'Laravel',
+            'React',
+            'OpenAI',
+            'Redis',
+        ],
+
+        image: '/projects/project5.jpg',
+    },
+
+    {
+        title: 'Enterprise CRM Dashboard',
+
+        description:
+            'Worked on analytics dashboards, reporting modules and customer engagement tracking features for enterprise clients.',
+
+        tech: [
+            'React',
+            'Laravel',
+            'MySQL',
+            'Tailwind',
+        ],
+
+        image: '/projects/project6.jpg',
     },
 ]
 
