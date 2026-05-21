@@ -9,17 +9,22 @@ const Skills = () => {
             id="skills"
             className="relative py-20 overflow-hidden"
         >
-
             {/* BACKGROUND IMAGE */}
             <div
-                className="absolute inset-0 bg-cover bg-center opacity-[0.08]"
+                className="absolute inset-0"
                 style={{
-                    backgroundImage: `url(${skillsBg})`,
+                    backgroundImage: `
+            linear-gradient(
+                rgba(255,255,255,0.72),
+                rgba(255,255,255,0.78)
+            ),
+            url(${skillsBg})
+        `,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
                 }}
             ></div>
-
-            {/* DARK OVERLAY */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#faf7ff] via-white to-[#f5f3ff]"></div>
 
             {/* GLOW EFFECTS */}
             <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-200/30 blur-3xl rounded-full"></div>
