@@ -65,14 +65,6 @@ const Navbar = () => {
                     >
                         Projects
                     </a>
-
-                    <a
-                        href="#contact"
-                        className="hover:text-purple-600 transition duration-300"
-                    >
-                        Contact
-                    </a>
-
                 </nav>
 
                 {/* Button */}
