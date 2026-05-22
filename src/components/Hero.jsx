@@ -212,7 +212,7 @@ const Hero = () => {
                             </a>
 
                             <a
-                                href="#"
+                                href="https://github.com/puja12" target='_blank'
                                 className="flex items-center gap-3 text-gray-300 hover:text-blue-300 transition"
                             >
 
@@ -227,7 +227,7 @@ const Hero = () => {
                             </a>
 
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/puja-patkar-3bbb354b" target='_blank'
                                 className="flex items-center gap-3 text-gray-300 hover:text-blue-300 transition"
                             >
 
