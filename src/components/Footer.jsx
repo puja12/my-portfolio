@@ -5,6 +5,12 @@ import {
     FaArrowRight,
 } from 'react-icons/fa'
 
+import {
+    MapPin,
+    Phone,
+    Mail,
+} from 'lucide-react'
+
 const Footer = () => {
     return (
         <footer
@@ -37,13 +43,43 @@ const Footer = () => {
                             Open to discussing exciting projects, freelance opportunities and senior engineering roles.
                         </p>
 
-                        <button className="group inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-[0_0_30px_rgba(37,99,235,0.35)] transition-all duration-300 text-white px-7 py-4 rounded-2xl font-semibold">
+                        {/*<button className="group inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-[0_0_30px_rgba(37,99,235,0.35)] transition-all duration-300 text-white px-7 py-4 rounded-2xl font-semibold">
 
                             Get In Touch
 
                             <FaArrowRight className="group-hover:translate-x-1 transition duration-300 text-sm" />
 
-                        </button>
+                        </button>*/}
+
+                        {/* SOCIAL ICONS */}
+                        <div className="flex gap-4 pt-4">
+
+                            <a
+                                href="https://linkedin.com"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
+                            >
+                                <FaLinkedin className="text-lg" />
+                            </a>
+
+                            <a
+                                href="https://github.com"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
+                            >
+                                <FaGithub className="text-lg" />
+                            </a>
+
+                            <a
+                                href="mailto:prabhupuja12@gmail.com"
+                                className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
+                            >
+                                <FaEnvelope className="text-lg" />
+                            </a>
+
+                        </div>
 
                     </div>
 
@@ -95,71 +131,50 @@ const Footer = () => {
                             </span>
                         </h3>
 
-                        <div className="space-y-5 text-slate-400">
+                        <div className="space-y-4">
 
-                            <div className="bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl">
+                            {/* LOCATION */}
+                            <div className="flex items-center gap-4 bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl hover:border-blue-500/30 transition-all duration-300">
 
-                                <p className="text-sm text-slate-500 mb-1">
-                                    Location
-                                </p>
+                                <div className="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
 
-                                <p className="text-slate-200">
+                                    <MapPin className="w-5 h-5 text-blue-400" />
+
+                                </div>
+
+                                <p className="text-slate-200 leading-6">
                                     Kalyan, Maharashtra, India
                                 </p>
 
                             </div>
 
-                            <div className="bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl">
+                            {/* PHONE */}
+                            <div className="flex items-center gap-4 bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl hover:border-blue-500/30 transition-all duration-300">
 
-                                <p className="text-sm text-slate-500 mb-1">
-                                    Phone
-                                </p>
+                                <div className="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
 
-                                <p className="text-slate-200">
+                                    <Phone className="w-5 h-5 text-blue-400" />
+
+                                </div>
+
+                                <p className="text-slate-200 leading-6">
                                     +91 9769905263
                                 </p>
 
                             </div>
 
-                            <div className="bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl">
+                            {/* EMAIL */}
+                            <div className="flex items-center gap-4 bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl hover:border-blue-500/30 transition-all duration-300">
 
-                                <p className="text-sm text-slate-500 mb-1">
-                                    Email
-                                </p>
+                                <div className="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0">
 
-                                <p className="text-slate-200 break-all">
+                                    <Mail className="w-5 h-5 text-blue-400" />
+
+                                </div>
+
+                                <p className="text-slate-200 break-all leading-6">
                                     prabhupuja12@gmail.com
                                 </p>
-
-                            </div>
-
-                            {/* SOCIAL ICONS */}
-                            <div className="flex gap-4 pt-4">
-
-                                <a
-                                    href="https://linkedin.com"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
-                                >
-                                    <FaLinkedin className="text-lg" />
-                                </a>
-
-                                <a
-                                    href="https://github.com"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
-                                >
-                                    <FaGithub className="text-lg" />
-                                </a>
-
-                                <a
-                                    href="mailto:prabhupuja12@gmail.com"
-                                    className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
-                                >
-                                    <FaEnvelope className="text-lg" />
-                                </a>
 
                             </div>
 
@@ -171,19 +186,14 @@ const Footer = () => {
 
                 {/* BOTTOM */}
                 <div className="border-t border-blue-900/30 mt-14 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-
                     <p className="text-slate-500 text-sm">
                         © 2026 Puja P. Patkar. All rights reserved.
                     </p>
-
                     <p className="text-slate-600 text-sm">
                         Crafted with React, Tailwind & Framer Motion
                     </p>
-
                 </div>
-
             </div>
-
         </footer>
     )
 }
