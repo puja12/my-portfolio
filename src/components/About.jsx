@@ -17,13 +17,13 @@ const About = () => {
     return (
         <section
             id="about"
-            className="relative py-20 md:py-24 px-4 overflow-hidden bg-[#050816]"
+            className="relative py-20 md:py-24 px-4 overflow-hidden bg-[#F8FAFC]"
         >
 
             {/* BACKGROUND GLOW */}
-            <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-blue-600/10 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-blue-200/30 blur-3xl rounded-full"></div>
 
-            <div className="absolute bottom-0 left-0 w-[320px] h-[320px] bg-indigo-600/10 blur-3xl rounded-full"></div>
+            <div className="absolute bottom-0 left-0 w-[320px] h-[320px] bg-indigo-200/30 blur-3xl rounded-full"></div>
 
             <div className="relative max-w-7xl mx-auto">
 
@@ -33,17 +33,17 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="text-center mb-12"
+                    className="mb-12"
                 >
 
                     {/* SMALL BADGE */}
-                    <div className="inline-flex items-center gap-3 bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 shadow-sm mb-6">
+                    <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-xl border border-blue-100 rounded-full px-4 py-2 shadow-sm mb-6">
 
-                        <div className="w-9 h-9 rounded-full bg-blue-500/15 flex items-center justify-center">
-                            <FaUserAlt className="text-blue-400 text-sm" />
+                        <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center">
+                            <FaUserAlt className="text-blue-700 text-sm" />
                         </div>
 
-                        <span className="text-sm font-semibold text-gray-300">
+                        <span className="text-sm font-semibold text-slate-700">
                             About Me
                         </span>
 
@@ -57,11 +57,11 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="relative bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[32px] p-6 md:p-10 shadow-[0_20px_60px_rgba(15,23,42,0.4)] overflow-hidden"
+                    className="relative bg-white/80 backdrop-blur-2xl border border-white/60 rounded-[32px] p-6 md:p-10 shadow-[0_20px_60px_rgba(15,23,42,0.08)] overflow-hidden"
                 >
 
                     {/* INNER GLOW */}
-                    <div className="absolute top-0 right-0 w-[240px] h-[240px] bg-blue-500/10 blur-3xl rounded-full"></div>
+                    <div className="absolute top-0 right-0 w-[240px] h-[240px] bg-blue-100/40 blur-3xl rounded-full"></div>
 
                     <div className="relative z-10">
 
@@ -71,13 +71,13 @@ const About = () => {
                             {/* LEFT CONTENT */}
                             <div className="max-w-3xl">
 
-                                <h3 className="text-2xl md:text-3xl font-black text-white mb-4 leading-tight">
+                                <h3 className="text-2xl md:text-3xl font-black text-[#0F172A] mb-4 leading-tight">
 
                                     Senior Backend & Full-Stack Engineer
 
                                 </h3>
 
-                                <div className="space-y-4 text-gray-400 text-[15px] md:text-[17px] leading-7">
+                                <div className="space-y-4 text-slate-600 text-[15px] md:text-[17px] leading-7">
 
                                     <p>
                                         I specialize in building scalable enterprise applications,
@@ -105,13 +105,13 @@ const About = () => {
                             <div className="grid grid-cols-2 gap-4 min-w-[240px]">
 
                                 {/* EXPERIENCE */}
-                                <div className="bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-5 text-center backdrop-blur-xl">
+                                <div className="bg-[#0F172A] border border-slate-800 rounded-2xl px-5 py-5 text-center shadow-xl">
 
                                     <h3 className="text-4xl font-black text-blue-400 mb-1">
                                         11+
                                     </h3>
 
-                                    <p className="text-sm text-gray-400 leading-5">
+                                    <p className="text-sm text-slate-300 leading-5">
                                         Years
                                         <br />
                                         Experience
@@ -120,13 +120,13 @@ const About = () => {
                                 </div>
 
                                 {/* PROJECTS */}
-                                <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl px-5 py-5 text-center text-white shadow-lg shadow-blue-500/20">
+                                <div className="bg-gradient-to-br from-[#0F172A] to-[#1E293B] rounded-2xl px-5 py-5 text-center text-white shadow-xl">
 
-                                    <h3 className="text-4xl font-black mb-1">
+                                    <h3 className="text-4xl font-black text-blue-400 mb-1">
                                         15+
                                     </h3>
 
-                                    <p className="text-sm text-blue-100 leading-5">
+                                    <p className="text-sm text-slate-300 leading-5">
                                         Projects
                                         <br />
                                         Delivered
@@ -145,7 +145,7 @@ const About = () => {
                                 <motion.div
                                     key={item}
                                     whileHover={{ y: -4 }}
-                                    className="flex items-center gap-3 bg-white/[0.04] border border-white/10 rounded-2xl px-4 py-4 backdrop-blur-xl hover:border-blue-500/30 hover:bg-white/[0.06] transition-all duration-300"
+                                    className="flex items-center gap-3 bg-[#0F172A] border border-slate-800 rounded-2xl px-4 py-4 shadow-lg hover:border-blue-500/30 transition-all duration-300"
                                 >
 
                                     <div className="w-9 h-9 rounded-xl bg-blue-500/15 flex items-center justify-center flex-shrink-0">
@@ -154,7 +154,7 @@ const About = () => {
 
                                     </div>
 
-                                    <span className="font-semibold text-gray-200 text-sm leading-6">
+                                    <span className="font-semibold text-slate-200 text-sm leading-6">
                                         {item}
                                     </span>
 

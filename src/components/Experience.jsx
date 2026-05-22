@@ -32,9 +32,21 @@ const Experience = () => {
         >
 
             {/* BACKGROUND GLOWS */}
-            <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-purple-600/20 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-blue-500/15 blur-3xl rounded-full"></div>
 
-            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/20 blur-3xl rounded-full"></div>
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/15 blur-3xl rounded-full"></div>
+
+            {/* GRID PATTERN */}
+            <div className="absolute inset-0 opacity-[0.03]">
+                <div
+                    className="w-full h-full"
+                    style={{
+                        backgroundImage:
+                            'linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)',
+                        backgroundSize: '60px 60px',
+                    }}
+                ></div>
+            </div>
 
             <div className="relative max-w-7xl mx-auto">
 
@@ -49,8 +61,8 @@ const Experience = () => {
 
                     <div className="inline-flex items-center gap-3 bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 mb-6">
 
-                        <div className="w-9 h-9 rounded-full bg-purple-500/20 flex items-center justify-center">
-                            <FaBriefcase className="text-purple-400 text-sm" />
+                        <div className="w-9 h-9 rounded-full bg-blue-500/20 flex items-center justify-center">
+                            <FaBriefcase className="text-blue-400 text-sm" />
                         </div>
 
                         <span className="text-sm font-semibold text-gray-300">
@@ -65,6 +77,12 @@ const Experience = () => {
 
                     </h2>
 
+                    <p className="text-gray-400 text-lg mt-6 max-w-3xl leading-8">
+                        A decade of building scalable digital products,
+                        enterprise platforms and modern web applications
+                        across multiple industries.
+                    </p>
+
                 </motion.div>
 
                 {/* MAIN GRID */}
@@ -73,7 +91,7 @@ const Experience = () => {
                     {/* CENTER LINE */}
                     <div className="hidden lg:flex absolute left-1/2 top-0 bottom-0 -translate-x-1/2 justify-center">
 
-                        <div className="w-[2px] bg-gradient-to-b from-purple-500 via-indigo-400 to-purple-500 h-full"></div>
+                        <div className="w-[2px] bg-gradient-to-b from-blue-500 via-indigo-400 to-blue-500 h-full"></div>
 
                     </div>
 
@@ -83,7 +101,7 @@ const Experience = () => {
                         {/* SECTION TITLE */}
                         <div className="mb-8">
 
-                            <p className="text-sm uppercase tracking-[4px] text-purple-400 font-semibold mb-3">
+                            <p className="text-sm uppercase tracking-[4px] text-blue-400 font-semibold mb-3">
                                 Career
                             </p>
 
@@ -110,17 +128,17 @@ const Experience = () => {
                                 >
 
                                     {/* TIMELINE DOT */}
-                                    <div className="hidden lg:flex absolute -right-[53px] top-10 w-5 h-5 rounded-full bg-purple-500 border-4 border-[#050816] shadow-[0_0_20px_rgba(168,85,247,0.8)] z-20"></div>
+                                    <div className="hidden lg:flex absolute -right-[53px] top-10 w-5 h-5 rounded-full bg-blue-500 border-4 border-[#050816] shadow-[0_0_20px_rgba(59,130,246,0.8)] z-20"></div>
 
                                     {/* CARD */}
-                                    <div className="bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[30px] p-7 md:p-8 shadow-xl hover:border-purple-500/30 transition-all duration-500">
+                                    <div className="bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[30px] p-7 md:p-8 shadow-xl hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-500">
 
                                         {/* TOP */}
                                         <div className="flex flex-col gap-6 mb-6">
 
                                             <div>
 
-                                                <div className="flex items-center gap-3 text-xs uppercase tracking-[3px] text-purple-400 mb-5">
+                                                <div className="flex items-center gap-3 text-xs uppercase tracking-[3px] text-blue-400 mb-5">
 
                                                     <span>EXP</span>
 
@@ -149,7 +167,7 @@ const Experience = () => {
                                             {/* DURATION */}
                                             <div className="inline-flex items-center gap-3 text-sm font-medium text-gray-400">
 
-                                                <FaCalendarAlt className="text-xs text-purple-400" />
+                                                <FaCalendarAlt className="text-xs text-blue-400" />
 
                                                 {exp.duration}
 
@@ -213,7 +231,7 @@ const Experience = () => {
                                     <div className="hidden lg:flex absolute -left-[53px] top-10 w-5 h-5 rounded-full bg-indigo-500 border-4 border-[#050816] shadow-[0_0_20px_rgba(99,102,241,0.8)] z-20"></div>
 
                                     {/* CARD */}
-                                    <div className="bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[30px] p-7 md:p-8 shadow-xl hover:border-indigo-500/30 transition-all duration-500">
+                                    <div className="bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[30px] p-7 md:p-8 shadow-xl hover:border-indigo-500/30 hover:-translate-y-1 transition-all duration-500">
 
                                         <div className="flex items-start justify-between gap-5 mb-6">
 
