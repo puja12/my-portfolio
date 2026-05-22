@@ -48,7 +48,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative overflow-hidden pt-10 pb-14 px-4 bg-[#050816]"
+            className="relative overflow-hidden pt-28 md:pt-32 pb-14 px-4 bg-[#050816]"
         >
 
             {/* FULL BACKGROUND IMAGE */}

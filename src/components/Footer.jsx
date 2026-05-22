@@ -2,115 +2,188 @@ import {
     FaGithub,
     FaLinkedin,
     FaEnvelope,
+    FaArrowRight,
 } from 'react-icons/fa'
 
 const Footer = () => {
     return (
         <footer
             id="contact"
-            className="bg-gradient-to-r from-[#0F172A] to-[#111827] text-white mt-20"
+            className="relative overflow-hidden bg-[#050816] text-white mt-0 border-t border-blue-900/30"
         >
-            <div className="max-w-7xl mx-auto px-6 py-16">
 
-                {/* Top Grid */}
+            {/* BACKGROUND GLOW */}
+            <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-600/10 blur-3xl rounded-full"></div>
+
+            <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-indigo-600/10 blur-3xl rounded-full"></div>
+
+            <div className="relative max-w-7xl mx-auto px-6 py-16">
+
+                {/* TOP GRID */}
                 <div className="grid md:grid-cols-3 gap-12">
 
-                    {/* Left */}
+                    {/* LEFT */}
                     <div>
-                        <h3 className="text-3xl font-bold mb-5">
-                            Let's Connect
+
+
+                        <h3 className="text-4xl font-black leading-tight mb-5">
+                            Let's{' '}
+                            <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                                Connect
+                            </span>
                         </h3>
 
-                        <p className="text-gray-300 leading-8 mb-6">
-                            Open to discussing exciting projects,
-                            freelance opportunities and senior engineering roles.
+                        <p className="text-slate-400 leading-8 mb-8 max-w-md">
+                            Open to discussing exciting projects, freelance opportunities and senior engineering roles.
                         </p>
 
-                        <button className="bg-purple-600 hover:bg-purple-700 transition px-6 py-3 rounded-xl font-medium">
+                        <button className="group inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:shadow-[0_0_30px_rgba(37,99,235,0.35)] transition-all duration-300 text-white px-7 py-4 rounded-2xl font-semibold">
+
                             Get In Touch
+
+                            <FaArrowRight className="group-hover:translate-x-1 transition duration-300 text-sm" />
+
                         </button>
+
                     </div>
 
-                    {/* Center */}
+                    {/* CENTER */}
                     <div>
-                        <h3 className="text-2xl font-bold mb-5">
-                            Quick Links
+
+                        <h3 className="text-2xl font-bold mb-6 text-white">
+                            Quick{' '}
+                            <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                                Links
+                            </span>
                         </h3>
 
-                        <div className="space-y-4 text-gray-300">
-                            <a href="#home" className="block hover:text-white">
-                                Home
-                            </a>
+                        <div className="space-y-4">
 
-                            <a href="#about" className="block hover:text-white">
-                                About
-                            </a>
+                            {[
+                                'Home',
+                                'About',
+                                'Skills',
+                                'Projects',
+                                'Experience',
+                            ].map((item) => (
 
-                            <a href="#skills" className="block hover:text-white">
-                                Skills
-                            </a>
+                                <a
+                                    key={item}
+                                    href={`#${item.toLowerCase()}`}
+                                    className="group flex items-center gap-3 text-slate-400 hover:text-blue-400 transition-all duration-300"
+                                >
 
-                            <a href="#projects" className="block hover:text-white">
-                                Projects
-                            </a>
+                                    <div className="w-2 h-2 rounded-full bg-blue-500/70 group-hover:scale-125 transition duration-300"></div>
 
-                            <a href="#experience" className="block hover:text-white">
-                                Experience
-                            </a>
+                                    {item}
+
+                                </a>
+
+                            ))}
+
                         </div>
+
                     </div>
 
-                    {/* Right */}
+                    {/* RIGHT */}
                     <div>
-                        <h3 className="text-2xl font-bold mb-5">
-                            Contact Info
+
+                        <h3 className="text-2xl font-bold mb-6 text-white">
+                            Contact{' '}
+                            <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                                Info
+                            </span>
                         </h3>
 
-                        <div className="space-y-4 text-gray-300">
-                            <p>Kalyan, Maharashtra, India</p>
+                        <div className="space-y-5 text-slate-400">
 
-                            <p>+91 9769905263</p>
+                            <div className="bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl">
 
-                            <p>prabhupuja12@gmail.com</p>
+                                <p className="text-sm text-slate-500 mb-1">
+                                    Location
+                                </p>
 
-                            {/* Social Icons */}
-                            <div className="flex gap-5 text-2xl pt-5">
+                                <p className="text-slate-200">
+                                    Kalyan, Maharashtra, India
+                                </p>
+
+                            </div>
+
+                            <div className="bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl">
+
+                                <p className="text-sm text-slate-500 mb-1">
+                                    Phone
+                                </p>
+
+                                <p className="text-slate-200">
+                                    +91 9769905263
+                                </p>
+
+                            </div>
+
+                            <div className="bg-white/[0.03] border border-blue-900/30 rounded-2xl px-5 py-4 backdrop-blur-xl">
+
+                                <p className="text-sm text-slate-500 mb-1">
+                                    Email
+                                </p>
+
+                                <p className="text-slate-200 break-all">
+                                    prabhupuja12@gmail.com
+                                </p>
+
+                            </div>
+
+                            {/* SOCIAL ICONS */}
+                            <div className="flex gap-4 pt-4">
 
                                 <a
                                     href="https://linkedin.com"
                                     target="_blank"
-                                    className="hover:text-purple-400 transition"
+                                    rel="noreferrer"
+                                    className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
                                 >
-                                    <FaLinkedin />
+                                    <FaLinkedin className="text-lg" />
                                 </a>
 
                                 <a
                                     href="https://github.com"
                                     target="_blank"
-                                    className="hover:text-purple-400 transition"
+                                    rel="noreferrer"
+                                    className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
                                 >
-                                    <FaGithub />
+                                    <FaGithub className="text-lg" />
                                 </a>
 
                                 <a
                                     href="mailto:prabhupuja12@gmail.com"
-                                    className="hover:text-purple-400 transition"
+                                    className="w-12 h-12 rounded-2xl bg-white/[0.04] border border-blue-900/30 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/40 hover:-translate-y-1 transition-all duration-300"
                                 >
-                                    <FaEnvelope />
+                                    <FaEnvelope className="text-lg" />
                                 </a>
 
                             </div>
+
                         </div>
+
                     </div>
 
                 </div>
 
-                {/* Bottom */}
-                <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400">
-                    © 2026 Puja P. Patkar. All rights reserved.
+                {/* BOTTOM */}
+                <div className="border-t border-blue-900/30 mt-14 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+
+                    <p className="text-slate-500 text-sm">
+                        © 2026 Puja P. Patkar. All rights reserved.
+                    </p>
+
+                    <p className="text-slate-600 text-sm">
+                        Crafted with React, Tailwind & Framer Motion
+                    </p>
+
                 </div>
 
             </div>
+
         </footer>
     )
 }
