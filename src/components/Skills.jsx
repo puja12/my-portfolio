@@ -1,7 +1,11 @@
 import { skills } from '../data/portfolioData'
 import TechCard from './TechCard'
-
+import { motion } from 'framer-motion'
 import skillsBg from '../assets/skills-bg.jpg'
+import {
+    FaUserAlt,
+    FaCheckCircle,
+} from 'react-icons/fa'
 
 const Skills = () => {
     return (
@@ -35,23 +39,29 @@ const Skills = () => {
             <div className="relative max-w-7xl mx-auto px-6">
 
                 {/* SECTION HEADER */}
-                <div className="flex items-center gap-4 mb-14">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="mb-12"
+                >
 
-                    <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 text-white flex items-center justify-center font-bold shadow-lg">
-                        /
-                    </div>
+                    {/* SMALL BADGE */}
+                    <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-xl border border-blue-100 rounded-full px-4 py-2 shadow-sm mb-6">
 
-                    <div>
-                        <p className="text-sm font-semibold text-purple-600 uppercase tracking-[3px]">
-                            Technologies
-                        </p>
+                        <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center">
+                            <FaUserAlt className="text-blue-700 text-sm" />
+                        </div>
 
-                        <h2 className="text-3xl md:text-4xl font-black text-[#0F172A]">
+                        <span className="text-sm font-semibold text-slate-700">
                             Tech Stack
-                        </h2>
+                        </span>
+
                     </div>
 
-                </div>
+                </motion.div>
+
 
                 {/* GRID */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
