@@ -193,11 +193,11 @@ const Navbar = () => {
                                 <div>
 
                                     <h2 className="heading-font text-slate-900 text-lg font-bold">
-                                        Portfolio
+                                        My Portfolio
                                     </h2>
 
                                     <p className="text-sm text-slate-600">
-                                        Welcome to my space
+                                        Crafted with passion & code
                                     </p>
 
                                 </div>
