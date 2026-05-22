@@ -7,12 +7,23 @@ import {
     SiPhp,
     SiJavascript,
     SiTailwindcss,
-    SiGooglecloud,
-    SiDocker,
+    SiGit,
+    SiRazorpay,
+    SiBootstrap,
+    SiPython,
+    SiOpenai,
 } from 'react-icons/si'
+
+import { FaCcAmazonPay } from 'react-icons/fa'
+import { BiMoney } from 'react-icons/bi'
 
 
 export const skills = [
+    {
+        name: 'PHP',
+        icon: SiPhp,
+        color: '#777BB4',
+    },
     {
         name: 'Laravel',
         icon: SiLaravel,
@@ -39,9 +50,9 @@ export const skills = [
         color: '#DC382D',
     },
     {
-        name: 'PHP',
-        icon: SiPhp,
-        color: '#777BB4',
+        name: 'Inertia.js',
+        icon: SiJavascript, // No official icon in react-icons
+        color: '#9553E9',
     },
     {
         name: 'JavaScript',
@@ -49,20 +60,45 @@ export const skills = [
         color: '#F7DF1E',
     },
     {
-        name: 'Tailwind',
+        name: 'Tailwind CSS',
         icon: SiTailwindcss,
         color: '#06B6D4',
     },
     {
-        name: 'GCP',
-        icon: SiGooglecloud,
-        color: '#4285F4',
+        name: 'Git',
+        icon: SiGit,
+        color: '#F05032',
     },
     {
-        name: 'Docker',
-        icon: SiDocker,
-        color: '#2496ED',
+        name: 'Razorpay',
+        icon: SiRazorpay,
+        color: '#0C2451',
     },
+    {
+        name: 'Braintree',
+        icon: FaCcAmazonPay, // Closest available alternative
+        color: '#222D65',
+    },
+    {
+        name: 'CCAvenue',
+        icon: BiMoney, // Generic payment icon
+        color: '#FF6B00',
+    },
+    {
+        name: 'Bootstrap',
+        icon: SiBootstrap,
+        color: '#7952B3',
+    },
+    {
+        name: 'Python',
+        icon: SiPython,
+        color: '#3776AB',
+    },
+    /*{
+        name: 'OpenAI',
+        icon: SiOpenai,
+        color: '#10A37F',
+    },*/
 ]
 
 export const projects = [
