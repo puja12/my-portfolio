@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-
+import SectionBadge from './SectionBadge'
 import {
     FaUserAlt,
     FaCheckCircle,
@@ -36,18 +36,12 @@ const About = () => {
                     className="mb-12"
                 >
 
-                    {/* SMALL BADGE */}
-                    <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-xl border border-blue-100 rounded-full px-4 py-2 shadow-sm mb-6">
-
-                        <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center">
+                    <SectionBadge
+                        title="About Me"
+                        icon={
                             <FaUserAlt className="text-blue-700 text-sm" />
-                        </div>
-
-                        <span className="text-sm font-semibold text-slate-700">
-                            About Me
-                        </span>
-
-                    </div>
+                        }
+                    />
 
                 </motion.div>
 
@@ -71,7 +65,7 @@ const About = () => {
                             {/* LEFT CONTENT */}
                             <div className="max-w-3xl">
 
-                                <h3 className="text-2xl md:text-3xl font-black text-[#0F172A] mb-4 leading-tight">
+                                <h3 className="heading-font text-2xl md:text-3xl font-black text-[#0F172A] mb-4 leading-tight">
 
                                     Senior Backend & Full-Stack Engineer
 
@@ -107,7 +101,7 @@ const About = () => {
                                 {/* EXPERIENCE */}
                                 <div className="bg-[#0F172A] border border-slate-800 rounded-2xl px-5 py-5 text-center shadow-xl">
 
-                                    <h3 className="text-4xl font-black text-blue-400 mb-1">
+                                    <h3 className="heading-font text-4xl font-black text-blue-400 mb-1">
                                         11+
                                     </h3>
 
@@ -122,7 +116,7 @@ const About = () => {
                                 {/* PROJECTS */}
                                 <div className="bg-gradient-to-br from-[#0F172A] to-[#1E293B] rounded-2xl px-5 py-5 text-center text-white shadow-xl">
 
-                                    <h3 className="text-4xl font-black text-blue-400 mb-1">
+                                    <h3 className="heading-font text-4xl font-black text-blue-400 mb-1">
                                         15+
                                     </h3>
 

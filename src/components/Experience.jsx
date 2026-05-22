@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-
+import SectionBadge from './SectionBadge'
 import {
     FaBriefcase,
     FaCalendarAlt,
@@ -58,20 +58,14 @@ const Experience = () => {
                     viewport={{ once: true }}
                     className="mb-16"
                 >
+                    <SectionBadge
+                        title="Career Journey"
+                        icon={
+                            <FaBriefcase className="text-blue-700 text-sm" />
+                        }
+                    />
 
-                    <div className="inline-flex items-center gap-3 bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 mb-6">
-
-                        <div className="w-9 h-9 rounded-full bg-blue-500/20 flex items-center justify-center">
-                            <FaBriefcase className="text-blue-400 text-sm" />
-                        </div>
-
-                        <span className="text-sm font-semibold text-gray-300">
-                            Career Journey
-                        </span>
-
-                    </div>
-
-                    <h2 className="text-[34px] md:text-[52px] leading-[1.05] tracking-[-2px] font-black text-white max-w-5xl">
+                    <h2 className="heading-font text-[34px] md:text-[52px] leading-[1.05] tracking-[-2px] font-black text-white max-w-5xl">
 
                         Experience & education shaping my engineering journey.
 
@@ -105,7 +99,7 @@ const Experience = () => {
                                 Career
                             </p>
 
-                            <h3 className="text-4xl font-black text-white">
+                            <h3 className="heading-font text-4xl font-black text-white">
                                 Experience
                             </h3>
 
@@ -150,7 +144,7 @@ const Experience = () => {
 
                                                 </div>
 
-                                                <h3 className="text-2xl md:text-3xl font-black text-white leading-tight">
+                                                <h3 className="heading-font text-2xl md:text-3xl font-black text-white leading-tight">
 
                                                     {exp.company}
 
@@ -205,7 +199,7 @@ const Experience = () => {
                                 Studies
                             </p>
 
-                            <h3 className="text-4xl font-black text-white">
+                            <h3 className="heading-font text-4xl font-black text-white">
                                 Education
                             </h3>
 
@@ -249,7 +243,7 @@ const Experience = () => {
 
                                                 </div>
 
-                                                <h3 className="text-2xl font-black text-white leading-tight">
+                                                <h3 className="heading-font text-2xl font-black text-white leading-tight">
 
                                                     {edu.degree}
 

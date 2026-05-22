@@ -192,7 +192,7 @@ const Navbar = () => {
 
                                 <div>
 
-                                    <h2 className="text-slate-900 text-lg font-bold">
+                                    <h2 className="heading-font text-slate-900 text-lg font-bold">
                                         Navigation
                                     </h2>
 

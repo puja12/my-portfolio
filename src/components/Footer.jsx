@@ -32,7 +32,7 @@ const Footer = () => {
                     <div>
 
 
-                        <h3 className="text-4xl font-black leading-tight mb-5">
+                        <h3 className="heading-font text-4xl font-black leading-tight mb-5">
                             Let's{' '}
                             <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
                                 Connect
@@ -86,7 +86,7 @@ const Footer = () => {
                     {/* CENTER */}
                     <div>
 
-                        <h3 className="text-2xl font-bold mb-6 text-white">
+                        <h3 className="heading-font text-2xl font-bold mb-6 text-white">
                             Quick{' '}
                             <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
                                 Links
@@ -124,7 +124,7 @@ const Footer = () => {
                     {/* RIGHT */}
                     <div>
 
-                        <h3 className="text-2xl font-bold mb-6 text-white">
+                        <h3 className="heading-font text-2xl font-bold mb-6 text-white">
                             Contact{' '}
                             <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
                                 Info

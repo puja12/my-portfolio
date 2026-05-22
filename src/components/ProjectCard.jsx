@@ -3,7 +3,7 @@ const ProjectCard = ({ project }) => {
         <div className="group bg-white border border-gray-200 rounded-2xl p-7 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
             {/* TITLE */}
-            <h3 className="text-[22px] font-bold text-[#111827] mb-4 leading-tight">
+            <h3 className="heading-font text-[22px] font-bold text-[#111827] mb-4 leading-tight">
                 {project.title}
             </h3>
 

@@ -1,5 +1,6 @@
 import { projects } from '../data/portfolioData'
 import ProjectCard from './ProjectCard'
+import SectionBadge from './SectionBadge'
 import { FaFolderOpen, FaArrowRight } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
@@ -21,17 +22,13 @@ const Projects = () => {
                         viewport={{ once: true }}
                         className="mb-12">
                         {/* SMALL BADGE */}
-                        <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-xl border border-blue-100 rounded-full px-4 py-2 shadow-sm mb-6">
 
-                            <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center">
+                        <SectionBadge
+                            title="Featured Projects"
+                            icon={
                                 <FaFolderOpen className="text-blue-700 text-sm" />
-                            </div>
-
-                            <span className="text-sm font-semibold text-slate-700">
-                                Featured Projects
-                            </span>
-
-                        </div>
+                            }
+                        />
                     </motion.div>
 
                 </div>

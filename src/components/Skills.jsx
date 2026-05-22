@@ -2,8 +2,9 @@ import { skills } from '../data/portfolioData'
 import TechCard from './TechCard'
 import { motion } from 'framer-motion'
 import skillsBg from '../assets/skills-bg.jpg'
+import SectionBadge from './SectionBadge'
 import {
-    FaUserAlt,
+    FaCode,
     FaCheckCircle,
 } from 'react-icons/fa'
 
@@ -48,17 +49,13 @@ const Skills = () => {
                 >
 
                     {/* SMALL BADGE */}
-                    <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-xl border border-blue-100 rounded-full px-4 py-2 shadow-sm mb-6">
+                    <SectionBadge
+                        title="Tech Stack"
+                        icon={
+                            <FaCode className="text-blue-700 text-sm" />
+                        }
+                    />
 
-                        <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center">
-                            <FaUserAlt className="text-blue-700 text-sm" />
-                        </div>
-
-                        <span className="text-sm font-semibold text-slate-700">
-                            Tech Stack
-                        </span>
-
-                    </div>
 
                 </motion.div>
 

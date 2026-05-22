@@ -102,7 +102,7 @@ const Hero = () => {
                             {/* LEFT SIDE */}
                             <div className="flex-1">
 
-                                <h1 className="text-[42px] md:text-[56px] lg:text-[68px] leading-[0.92] font-black tracking-[-3px] text-white">
+                                <h1 className="heading-font text-[42px] md:text-[56px] lg:text-[68px] leading-[0.92] font-black tracking-[-3px] text-white">
 
                                     Building
 
@@ -300,7 +300,7 @@ const Hero = () => {
                                 className="absolute top-[95px] left-[5px] md:left-[10px] bg-white/[0.06] backdrop-blur-2xl shadow-2xl rounded-2xl px-5 py-4 border border-white/10 z-30 min-w-[125px]"
                             >
 
-                                <h3 className="text-3xl font-bold text-blue-400 leading-none">
+                                <h3 className="heading-font text-3xl font-bold text-blue-400 leading-none">
                                     11+
                                 </h3>
 
