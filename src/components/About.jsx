@@ -17,13 +17,13 @@ const About = () => {
     return (
         <section
             id="about"
-            className="relative py-20 md:py-24 px-4 overflow-hidden"
+            className="relative py-20 md:py-24 px-4 overflow-hidden bg-[#050816]"
         >
 
             {/* BACKGROUND GLOW */}
-            <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-purple-200/20 blur-3xl rounded-full"></div>
+            <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-blue-600/10 blur-3xl rounded-full"></div>
 
-            <div className="absolute bottom-0 left-0 w-[320px] h-[320px] bg-indigo-200/20 blur-3xl rounded-full"></div>
+            <div className="absolute bottom-0 left-0 w-[320px] h-[320px] bg-indigo-600/10 blur-3xl rounded-full"></div>
 
             <div className="relative max-w-7xl mx-auto">
 
@@ -37,13 +37,13 @@ const About = () => {
                 >
 
                     {/* SMALL BADGE */}
-                    <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-xl border border-purple-100 rounded-full px-4 py-2 shadow-sm mb-6">
+                    <div className="inline-flex items-center gap-3 bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 shadow-sm mb-6">
 
-                        <div className="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center">
-                            <FaUserAlt className="text-purple-600 text-sm" />
+                        <div className="w-9 h-9 rounded-full bg-blue-500/15 flex items-center justify-center">
+                            <FaUserAlt className="text-blue-400 text-sm" />
                         </div>
 
-                        <span className="text-sm font-semibold text-gray-700">
+                        <span className="text-sm font-semibold text-gray-300">
                             About Me
                         </span>
 
@@ -57,11 +57,11 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="relative bg-white/75 backdrop-blur-xl border border-white/60 rounded-[28px] p-6 md:p-10 shadow-[0_20px_60px_rgba(15,23,42,0.08)] overflow-hidden"
+                    className="relative bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[32px] p-6 md:p-10 shadow-[0_20px_60px_rgba(15,23,42,0.4)] overflow-hidden"
                 >
 
                     {/* INNER GLOW */}
-                    <div className="absolute top-0 right-0 w-[240px] h-[240px] bg-purple-100/30 blur-3xl rounded-full"></div>
+                    <div className="absolute top-0 right-0 w-[240px] h-[240px] bg-blue-500/10 blur-3xl rounded-full"></div>
 
                     <div className="relative z-10">
 
@@ -71,13 +71,13 @@ const About = () => {
                             {/* LEFT CONTENT */}
                             <div className="max-w-3xl">
 
-                                <h3 className="text-2xl md:text-3xl font-black text-[#0F172A] mb-4 leading-tight">
+                                <h3 className="text-2xl md:text-3xl font-black text-white mb-4 leading-tight">
 
                                     Senior Backend & Full-Stack Engineer
 
                                 </h3>
 
-                                <div className="space-y-4 text-gray-600 text-[15px] md:text-[17px] leading-7">
+                                <div className="space-y-4 text-gray-400 text-[15px] md:text-[17px] leading-7">
 
                                     <p>
                                         I specialize in building scalable enterprise applications,
@@ -105,13 +105,13 @@ const About = () => {
                             <div className="grid grid-cols-2 gap-4 min-w-[240px]">
 
                                 {/* EXPERIENCE */}
-                                <div className="bg-white border border-gray-100 rounded-2xl px-5 py-5 text-center shadow-sm">
+                                <div className="bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-5 text-center backdrop-blur-xl">
 
-                                    <h3 className="text-4xl font-black text-[#0F172A] mb-1">
+                                    <h3 className="text-4xl font-black text-blue-400 mb-1">
                                         11+
                                     </h3>
 
-                                    <p className="text-sm text-gray-500 leading-5">
+                                    <p className="text-sm text-gray-400 leading-5">
                                         Years
                                         <br />
                                         Experience
@@ -120,13 +120,13 @@ const About = () => {
                                 </div>
 
                                 {/* PROJECTS */}
-                                <div className="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-2xl px-5 py-5 text-center text-white shadow-lg">
+                                <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl px-5 py-5 text-center text-white shadow-lg shadow-blue-500/20">
 
                                     <h3 className="text-4xl font-black mb-1">
                                         15+
                                     </h3>
 
-                                    <p className="text-sm text-purple-100 leading-5">
+                                    <p className="text-sm text-blue-100 leading-5">
                                         Projects
                                         <br />
                                         Delivered
@@ -145,16 +145,16 @@ const About = () => {
                                 <motion.div
                                     key={item}
                                     whileHover={{ y: -4 }}
-                                    className="flex items-center gap-3 bg-white border border-gray-100 rounded-2xl px-4 py-4 shadow-sm transition-all duration-300"
+                                    className="flex items-center gap-3 bg-white/[0.04] border border-white/10 rounded-2xl px-4 py-4 backdrop-blur-xl hover:border-blue-500/30 hover:bg-white/[0.06] transition-all duration-300"
                                 >
 
-                                    <div className="w-9 h-9 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
+                                    <div className="w-9 h-9 rounded-xl bg-blue-500/15 flex items-center justify-center flex-shrink-0">
 
-                                        <FaCheckCircle className="text-purple-600 text-sm" />
+                                        <FaCheckCircle className="text-blue-400 text-sm" />
 
                                     </div>
 
-                                    <span className="font-semibold text-gray-700 text-sm leading-6">
+                                    <span className="font-semibold text-gray-200 text-sm leading-6">
                                         {item}
                                     </span>
 
