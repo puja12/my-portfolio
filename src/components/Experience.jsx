@@ -1,118 +1,155 @@
 import { motion } from 'framer-motion'
+
 import {
     FaBriefcase,
     FaCalendarAlt,
-    FaArrowRight,
+    FaGraduationCap,
+    FaUniversity,
 } from 'react-icons/fa'
 
 import { experiences } from '../data/portfolioData'
+
+const education = [
+    {
+        degree: 'Bachelor of Engineering (B.E.)',
+        field: 'Computer Engineering',
+        institute: 'Mumbai University, India',
+        year: '2011 - 2014',
+    },
+    {
+        degree: 'Diploma in Computer Engineering',
+        field: 'Computer Engineering',
+        institute: 'MSBTE, India',
+        year: '2008 - 2011',
+    },
+]
 
 const Experience = () => {
     return (
         <section
             id="experience"
-            className="relative py-20 md:py-24 px-4 overflow-hidden"
+            className="relative py-20 md:py-24 px-4 overflow-hidden bg-[#050816]"
         >
 
-            {/* BACKGROUND */}
-            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-purple-200/20 blur-3xl rounded-full"></div>
+            {/* BACKGROUND GLOWS */}
+            <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-purple-600/20 blur-3xl rounded-full"></div>
 
-            <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-indigo-200/20 blur-3xl rounded-full"></div>
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/20 blur-3xl rounded-full"></div>
 
             <div className="relative max-w-7xl mx-auto">
 
-                {/* SECTION HEADER */}
+                {/* HEADER */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="mb-14"
+                    className="mb-16"
                 >
 
-                    {/* BADGE */}
-                    <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-xl border border-purple-100 rounded-full px-4 py-2 shadow-sm mb-6">
+                    <div className="inline-flex items-center gap-3 bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 mb-6">
 
-                        <div className="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center">
-                            <FaBriefcase className="text-purple-600 text-sm" />
+                        <div className="w-9 h-9 rounded-full bg-purple-500/20 flex items-center justify-center">
+                            <FaBriefcase className="text-purple-400 text-sm" />
                         </div>
 
-                        <span className="text-sm font-semibold text-gray-700">
+                        <span className="text-sm font-semibold text-gray-300">
                             Career Journey
                         </span>
 
                     </div>
 
-                    {/* TITLE */}
-                    <h2 className="text-[34px] md:text-[48px] leading-[1.1] tracking-[-2px] font-black text-[#0F172A] max-w-4xl">
+                    <h2 className="text-[34px] md:text-[52px] leading-[1.05] tracking-[-2px] font-black text-white max-w-5xl">
 
-                        Professional experience building scalable products & enterprise systems.
+                        Experience & education shaping my engineering journey.
 
                     </h2>
 
                 </motion.div>
 
-                {/* TIMELINE */}
-                <div className="relative">
+                {/* MAIN GRID */}
+                <div className="relative grid lg:grid-cols-[1fr_80px_1fr] gap-8">
 
                     {/* CENTER LINE */}
-                    <div className="hidden md:block absolute left-[24px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-300 via-indigo-200 to-transparent"></div>
+                    <div className="hidden lg:flex absolute left-1/2 top-0 bottom-0 -translate-x-1/2 justify-center">
 
-                    <div className="space-y-8">
+                        <div className="w-[2px] bg-gradient-to-b from-purple-500 via-indigo-400 to-purple-500 h-full"></div>
 
-                        {experiences.map((exp, index) => (
+                    </div>
 
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{
-                                    duration: 0.6,
-                                    delay: index * 0.1,
-                                }}
-                                viewport={{ once: true }}
-                                className="relative md:pl-20"
-                            >
+                    {/* LEFT SIDE */}
+                    <div>
 
-                                {/* TIMELINE DOT */}
-                                <div className="hidden md:flex absolute left-0 top-8 w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 text-white items-center justify-center shadow-lg">
+                        {/* SECTION TITLE */}
+                        <div className="mb-8">
 
-                                    <FaBriefcase className="text-sm" />
+                            <p className="text-sm uppercase tracking-[4px] text-purple-400 font-semibold mb-3">
+                                Career
+                            </p>
 
-                                </div>
+                            <h3 className="text-4xl font-black text-white">
+                                Experience
+                            </h3>
 
-                                {/* CARD */}
-                                <div className="group relative bg-white/75 backdrop-blur-2xl border border-white/60 rounded-[30px] p-7 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        </div>
 
-                                    {/* HOVER GLOW */}
-                                    <div className="absolute inset-0 bg-gradient-to-r from-purple-50/0 via-purple-50/40 to-indigo-50/0 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                        <div className="space-y-8">
 
-                                    <div className="relative z-10">
+                            {experiences.map((exp, index) => (
+
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 0.6,
+                                        delay: index * 0.1,
+                                    }}
+                                    viewport={{ once: true }}
+                                    className="relative"
+                                >
+
+                                    {/* TIMELINE DOT */}
+                                    <div className="hidden lg:flex absolute -right-[53px] top-10 w-5 h-5 rounded-full bg-purple-500 border-4 border-[#050816] shadow-[0_0_20px_rgba(168,85,247,0.8)] z-20"></div>
+
+                                    {/* CARD */}
+                                    <div className="bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[30px] p-7 md:p-8 shadow-xl hover:border-purple-500/30 transition-all duration-500">
 
                                         {/* TOP */}
-                                        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-6">
+                                        <div className="flex flex-col gap-6 mb-6">
 
-                                            {/* ROLE */}
                                             <div>
 
-                                                <h3 className="text-2xl md:text-3xl font-black text-[#0F172A] leading-tight">
+                                                <div className="flex items-center gap-3 text-xs uppercase tracking-[3px] text-purple-400 mb-5">
 
-                                                    {exp.role}
+                                                    <span>EXP</span>
+
+                                                    <span>•</span>
+
+                                                    <span>
+                                                        0{index + 1}
+                                                    </span>
+
+                                                </div>
+
+                                                <h3 className="text-2xl md:text-3xl font-black text-white leading-tight">
+
+                                                    {exp.company}
 
                                                 </h3>
 
-                                                <p className="text-lg font-semibold text-purple-600 mt-3">
+                                                <p className="text-lg text-gray-400 mt-3">
 
-                                                    {exp.company}
+                                                    {exp.role}
 
                                                 </p>
 
                                             </div>
 
                                             {/* DURATION */}
-                                            <div className="inline-flex items-center gap-3 bg-purple-50 border border-purple-100 rounded-2xl px-5 py-3 text-sm font-semibold text-purple-700 w-fit">
+                                            <div className="inline-flex items-center gap-3 text-sm font-medium text-gray-400">
 
-                                                <FaCalendarAlt className="text-xs" />
+                                                <FaCalendarAlt className="text-xs text-purple-400" />
 
                                                 {exp.duration}
 
@@ -121,7 +158,7 @@ const Experience = () => {
                                         </div>
 
                                         {/* DESCRIPTION */}
-                                        <p className="text-gray-600 leading-8 text-[16px] md:text-lg">
+                                        <p className="text-gray-400 leading-8 text-[15px] md:text-[16px]">
 
                                             {exp.description}
 
@@ -129,11 +166,116 @@ const Experience = () => {
 
                                     </div>
 
-                                </div>
+                                </motion.div>
 
-                            </motion.div>
+                            ))}
 
-                        ))}
+                        </div>
+
+                    </div>
+
+                    {/* CENTER EMPTY */}
+                    <div className="hidden lg:block"></div>
+
+                    {/* RIGHT SIDE */}
+                    <div>
+
+                        {/* SECTION TITLE */}
+                        <div className="mb-8">
+
+                            <p className="text-sm uppercase tracking-[4px] text-indigo-400 font-semibold mb-3">
+                                Studies
+                            </p>
+
+                            <h3 className="text-4xl font-black text-white">
+                                Education
+                            </h3>
+
+                        </div>
+
+                        <div className="space-y-8">
+
+                            {education.map((edu, index) => (
+
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 0.6,
+                                        delay: index * 0.1,
+                                    }}
+                                    viewport={{ once: true }}
+                                    className="relative"
+                                >
+
+                                    {/* TIMELINE DOT */}
+                                    <div className="hidden lg:flex absolute -left-[53px] top-10 w-5 h-5 rounded-full bg-indigo-500 border-4 border-[#050816] shadow-[0_0_20px_rgba(99,102,241,0.8)] z-20"></div>
+
+                                    {/* CARD */}
+                                    <div className="bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[30px] p-7 md:p-8 shadow-xl hover:border-indigo-500/30 transition-all duration-500">
+
+                                        <div className="flex items-start justify-between gap-5 mb-6">
+
+                                            <div>
+
+                                                <div className="flex items-center gap-3 text-xs uppercase tracking-[3px] text-indigo-400 mb-5">
+
+                                                    <span>EDU</span>
+
+                                                    <span>•</span>
+
+                                                    <span>
+                                                        0{index + 1}
+                                                    </span>
+
+                                                </div>
+
+                                                <h3 className="text-2xl font-black text-white leading-tight">
+
+                                                    {edu.degree}
+
+                                                </h3>
+
+                                                <p className="text-lg text-gray-400 mt-3">
+
+                                                    {edu.field}
+
+                                                </p>
+
+                                            </div>
+
+                                            <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
+
+                                                <FaGraduationCap className="text-indigo-400 text-xl" />
+
+                                            </div>
+
+                                        </div>
+
+                                        <div className="flex items-center gap-3 text-gray-400 text-sm mb-5">
+
+                                            <FaUniversity className="text-xs text-indigo-400" />
+
+                                            {edu.institute}
+
+                                        </div>
+
+                                        <div className="inline-flex items-center gap-3 text-sm font-medium text-gray-400">
+
+                                            <FaCalendarAlt className="text-xs text-indigo-400" />
+
+                                            {edu.year}
+
+                                        </div>
+
+                                    </div>
+
+                                </motion.div>
+
+                            ))}
+
+                        </div>
 
                     </div>
 

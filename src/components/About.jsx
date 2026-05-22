@@ -44,18 +44,10 @@ const About = () => {
                         </div>
 
                         <span className="text-sm font-semibold text-gray-700">
-                            About
+                            About Me
                         </span>
 
                     </div>
-
-                    {/* MAIN HEADING */}
-                    <h2 className="text-[34px] md:text-[52px] font-black tracking-[-2px] leading-[1.05] text-[#0F172A] max-w-4xl mx-auto">
-
-                        Engineering scalable digital products
-                        with clean architecture & modern technologies.
-
-                    </h2>
 
                 </motion.div>
 
