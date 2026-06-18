@@ -2,6 +2,7 @@ import profile from '../assets/profile.png'
 import heroBg from '../assets/hero-bg.jpg'
 import { motion } from 'framer-motion'
 import resume from '../assets/Puja-Patkar-Full-Stack-Engineer.pdf'
+import { TypeAnimation } from 'react-type-animation'
 
 import {
     FaArrowRight,
@@ -102,30 +103,46 @@ const Hero = () => {
                             {/* LEFT SIDE */}
                             <div className="flex-1">
 
-                                <h1 className="heading-font text-[42px] md:text-[56px] lg:text-[68px] leading-[0.92] font-black tracking-[-3px] text-white">
+                                <h1 className="heading-font leading-none">
 
-                                    Building
-
-                                    <br />
-
-                                    <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">
-                                        Scalable
+                                    <span className="block text-[24px] md:text-[30px] font-medium text-slate-300 mb-3">
+                                        Hi, I'm
                                     </span>
 
-                                    <br />
+                                    <span className="block text-[52px] md:text-[72px] lg:text-[88px] font-extrabold tracking-[-2px] bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">
+                                        Puja Patkar
+                                    </span>
 
-                                    Digital Products.
+                                    <div className="mt-5 flex items-center gap-2 text-[24px] md:text-[32px] lg:text-[38px] font-semibold text-white">
+
+                                        <span className="text-blue-400">{'>'}</span>
+
+                                        <TypeAnimation
+                                            sequence={[
+                                                'Senior Backend Engineer',
+                                                2000,
+                                                'Full-Stack Engineer',
+                                                2000,
+                                                'Laravel Expert',
+                                                2000,
+                                                'React Developer',
+                                                2000,
+                                            ]}
+                                            speed={50}
+                                            repeat={Infinity}
+                                        />
+
+                                    </div>
 
                                 </h1>
 
                                 {/* Description */}
-                                <p className="text-gray-300 text-lg md:text-xl leading-9 mt-10 max-w-3xl">
+                                <p className="text-gray-300 text-lg md:text-xl leading-7 mt-10 max-w-3xl">
 
-                                    Senior Backend & Full-Stack Engineer with 11+ years of
-                                    experience building enterprise systems, eCommerce
-                                    platforms, subscription engines and AI-powered web
-                                    applications using Laravel, React, Vue.js and cloud
-                                    technologies.
+                                    With 11+ years of experience, I build scalable web applications,
+                                    enterprise platforms, eCommerce solutions and business automation
+                                    systems. My expertise spans Laravel, Vue.js, React, REST APIs,
+                                    cloud infrastructure and modern software architecture.
 
                                 </p>
 
@@ -144,25 +161,21 @@ const Hero = () => {
 
                                     <div className="text-[13px] leading-7 font-mono text-blue-300">
 
-                                        <p>{`// Building scalable solutions`}</p>
+                                        <p>{`const mission = {`}</p>
 
-                                        <p>{`const developer = {`}</p>
+                                        <p className="ml-4">{`build: 'Scalable Systems',`}</p>
 
-                                        <p className="ml-4">{`passion: 'solving problems',`}</p>
+                                        <p className="ml-4">{`solve: 'Complex Problems',`}</p>
 
-                                        <p className="ml-4">{`code: 'clean & efficient',`}</p>
+                                        <p className="ml-4">{`deliver: 'Business Value',`}</p>
 
-                                        <p className="ml-4">{`focus: 'impact',`}</p>
+                                        <p className="ml-4">{`learn: 'Every Day'`}</p>
 
                                         <p>{`}`}</p>
 
                                         <br />
 
-                                        <p>{`function createImpact() {`}</p>
-
-                                        <p className="ml-4">{`return 'digital products';`}</p>
-
-                                        <p>{`}`}</p>
+                                        <p>{`return 'Turning Ideas Into Products';`}</p>
 
                                     </div>
 
