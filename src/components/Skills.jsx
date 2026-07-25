@@ -12,7 +12,7 @@ const Skills = () => {
     return (
         <section
             id="skills"
-            className="relative py-20 overflow-hidden"
+            className="relative py-20 md:py-24 px-4 md:px-6 overflow-hidden"
         >
             {/* BACKGROUND IMAGE */}
             <div
@@ -37,7 +37,7 @@ const Skills = () => {
             <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-indigo-200/20 blur-3xl rounded-full"></div>
 
             {/* CONTENT */}
-            <div className="relative max-w-7xl mx-auto px-6">
+            <div className="relative max-w-7xl mx-auto">
 
                 {/* SECTION HEADER */}
                 <motion.div

@@ -29,7 +29,7 @@ const Experience = () => {
     return (
         <section
             id="experience"
-            className="relative py-16 md:py-20 px-4 overflow-hidden bg-[#050816]"
+            className="relative py-20 md:py-24 px-4 md:px-6 overflow-hidden bg-[#050816]"
         >
             {/* BACKGROUND GLOWS */}
             <div className="absolute top-0 right-0 w-[420px] h-[420px] bg-blue-500/12 blur-3xl rounded-full"></div>
@@ -72,7 +72,7 @@ const Experience = () => {
                 </motion.div>
 
                 {/* MAIN GRID */}
-                <div className="relative grid lg:grid-cols-[1fr_70px_1fr] gap-7">
+                <div className="relative grid lg:grid-cols-[1fr_48px_1fr] gap-6">
                     {/* CENTER LINE */}
                     <div className="hidden lg:flex absolute left-1/2 top-0 bottom-0 -translate-x-1/2 justify-center">
                         <div className="w-[2px] bg-gradient-to-b from-blue-500 via-indigo-400 to-blue-500 h-full"></div>
@@ -104,7 +104,7 @@ const Experience = () => {
                                     className="relative"
                                 >
                                     {/* TIMELINE DOT */}
-                                    <div className="hidden lg:flex absolute -right-[46px] top-8 w-4 h-4 rounded-full bg-blue-500 border-[3px] border-[#050816] shadow-[0_0_18px_rgba(59,130,246,0.75)] z-20"></div>
+                                    <div className="hidden lg:flex absolute -right-[38px] top-8 w-4 h-4 rounded-full bg-blue-500 border-[3px] border-[#050816] shadow-[0_0_18px_rgba(59,130,246,0.75)] z-20"></div>
 
                                     {/* CARD */}
                                     <div className="group bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[24px] p-5 md:p-6 shadow-xl hover:border-blue-500/30 hover:-translate-y-1 transition-all duration-500">
@@ -171,7 +171,7 @@ const Experience = () => {
                                     className="relative"
                                 >
                                     {/* TIMELINE DOT */}
-                                    <div className="hidden lg:flex absolute -left-[46px] top-8 w-4 h-4 rounded-full bg-indigo-500 border-[3px] border-[#050816] shadow-[0_0_18px_rgba(99,102,241,0.75)] z-20"></div>
+                                    <div className="hidden lg:flex absolute -left-[38px] top-8 w-4 h-4 rounded-full bg-indigo-500 border-[3px] border-[#050816] shadow-[0_0_18px_rgba(99,102,241,0.75)] z-20"></div>
 
                                     {/* CARD */}
                                     <div className="group bg-white/[0.04] backdrop-blur-2xl border border-white/10 rounded-[24px] p-5 md:p-6 shadow-xl hover:border-indigo-500/30 hover:-translate-y-1 transition-all duration-500">

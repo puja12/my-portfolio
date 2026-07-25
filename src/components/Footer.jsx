@@ -23,7 +23,7 @@ const Footer = () => {
 
             <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-indigo-600/10 blur-3xl rounded-full"></div>
 
-            <div className="relative max-w-7xl mx-auto px-6 py-16">
+            <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-20">
 
                 {/* TOP GRID */}
                 <div className="grid md:grid-cols-3 gap-12">

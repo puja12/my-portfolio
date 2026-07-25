@@ -49,7 +49,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative overflow-hidden pt-28 md:pt-32 pb-14 px-4 bg-[#050816]"
+            className="relative overflow-hidden pt-28 md:pt-32 pb-16 md:pb-20 px-4 md:px-6 bg-[#050816]"
         >
 
             {/* FULL BACKGROUND IMAGE */}
@@ -137,7 +137,7 @@ const Hero = () => {
                                 </h1>
 
                                 {/* Description */}
-                                <p className="text-gray-300 text-lg md:text-xl leading-7 mt-10 max-w-3xl">
+                                <p className="text-gray-300 text-lg md:text-xl leading-7 mt-8 max-w-3xl">
 
                                     With 11+ years of experience, I build scalable web applications,
                                     enterprise platforms, eCommerce solutions and business automation
@@ -186,7 +186,7 @@ const Hero = () => {
                         </div>
 
                         {/* CTA BUTTONS */}
-                        <div className="flex flex-wrap gap-5 mt-6">
+                        <div className="flex flex-wrap gap-4 mt-8">
 
                             <button className="group bg-gradient-to-r from-blue-500 to-indigo-600 hover:shadow-[0_0_40px_rgba(59,130,246,0.45)] transition-all duration-300 text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3">
 
@@ -207,7 +207,7 @@ const Hero = () => {
                         </div>
 
                         {/* SOCIAL LINKS */}
-                        <div className="flex flex-wrap items-center gap-10 mt-12">
+                        <div className="flex flex-wrap items-center gap-6 md:gap-8 mt-10">
 
                             <a
                                 href="mailto:prabhupuja12@gmail.com"
@@ -261,7 +261,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
-                            className="mt-20 flex flex-wrap justify-center gap-5"
+                            className="mt-12 flex flex-wrap justify-start gap-4"
                         >
 
                             {techStack.map((tech, index) => (
@@ -290,10 +290,10 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="relative flex justify-center lg:justify-end mt-14 lg:mt-0"
+                        className="relative flex justify-center lg:justify-end mt-10 lg:mt-0"
                     >
 
-                        <div className="relative w-[360px] h-[360px] md:w-[420px] md:h-[420px] flex items-center justify-center -mt-10 md:-mt-16">
+                        <div className="relative w-[360px] h-[360px] md:w-[420px] md:h-[420px] flex items-center justify-center">
 
                             {/* DOTTED RING */}
                             <div className="absolute inset-0 flex items-center justify-center">
